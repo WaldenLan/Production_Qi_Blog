@@ -83,7 +83,7 @@
                     <?php
                     $content = strip_tags(str_replace('</p>', '&nbsp;&nbsp;', str_replace('<br>', '&nbsp;', $comment->content)));
                     $content_length = mb_strlen($content);
-                    echo $content_length > 100 ? mb_substr($content, 0, 100).'...' : mb_substr($content, 0, $content_length);
+                    echo $content_length > 90 ? mb_substr($content, 0, 90).'...' : mb_substr($content, 0, $content_length);
                     ?>
                 </div>
 

@@ -49,7 +49,7 @@
                                     <?php
                                     $content = strip_tags(str_replace('</p>', '&nbsp;&nbsp;', str_replace('<br>', '&nbsp;', $coding_entry->content)));
                                     $content_length = mb_strlen($content);
-                                    echo $content_length > 450 ? mb_substr($content, 0, 450).'...' : mb_substr($content, 0, $content_length);
+                                    echo $content_length > 250 ? mb_substr($content, 0, 250).'...' : mb_substr($content, 0, $content_length);
                                     ?>
                                 </p>
                                 <a href="<?php echo site_url($coding_entry->topic.'/view/'.$coding_entry->id); ?>"><button class="btn btn-default">Read More</button></a>
@@ -86,7 +86,7 @@
                                     <?php
                                     $content = strip_tags(str_replace('</p>', '&nbsp;&nbsp;', str_replace('<br>', '&nbsp;', $coding_entry->content)));
                                     $content_length = mb_strlen($content);
-                                    echo $content_length > 450 ? mb_substr($content, 0, 450).'...' : mb_substr($content, 0, $content_length);
+                                    echo $content_length > 250 ? mb_substr($content, 0, 250).'...' : mb_substr($content, 0, $content_length);
                                     ?>
                                 </p>
                                 <a href="<?php echo site_url($coding_entry->topic.'/view/'.$coding_entry->id); ?>"><button class="btn btn-default">Read More</button></a>
