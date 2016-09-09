@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b34d3161-1793-454d-a64c-7174162a1c65" name="Qi_Blog" url="http://121.43.63.173">
+        <fileTransfer host="121.43.63.173" port="21" password="dfc6dfc3dfcbdfc4dfdbdfc3dfeadfc0dfc3" username="lianqi">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
