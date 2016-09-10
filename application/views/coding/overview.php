@@ -41,7 +41,7 @@
                         <?php if (strpos($coding_entry->content, '<img') == FALSE): ?>
                             <div class="row entry-walden">
 <!--                                <div class="col-md-9 col-sm-12">  <!--Copy Case-->
-                                <div class="col-md-11 col-sm-12">
+                                <div class="col-md-12 col-sm-12">
 
                                     <h3 class="title-width-walden">
                                         <a class="cat">
@@ -55,7 +55,7 @@
                                         <?php
                                         $content = strip_tags(str_replace('</p>', '&nbsp;&nbsp;', str_replace('<br>', '&nbsp;', $coding_entry->content)));
                                         $content_length = mb_strlen($content);
-                                        echo $content_length > 250 ? mb_substr($content, 0, 250).'...' : mb_substr($content, 0, $content_length);
+                                        echo $content_length > 300 ? mb_substr($content, 0, 300).'...' : mb_substr($content, 0, $content_length);
                                         ?>
                                     </p>
                                     <a href="<?php echo site_url($coding_entry->topic.'/view/'.$coding_entry->id); ?>"><button class="btn btn-default">Read More</button></a>
@@ -80,7 +80,7 @@
 
                         <?php else: ?>
                             <div class="row entry-walden">
-                                <div class="col-md-9 col-sm-12">
+                                <div class="col-md-12 col-sm-12">
                                     <h3 class="title-width-walden">
                                         <a class="cat">
                                             <?php echo $coding_entry->tag; ?>
@@ -92,7 +92,7 @@
                                         <?php
                                         $content = strip_tags(str_replace('</p>', '&nbsp;&nbsp;', str_replace('<br>', '&nbsp;', $coding_entry->content)));
                                         $content_length = mb_strlen($content);
-                                        echo $content_length > 250 ? mb_substr($content, 0, 250).'...' : mb_substr($content, 0, $content_length);
+                                        echo $content_length > 300 ? mb_substr($content, 0, 300).'...' : mb_substr($content, 0, $content_length);
                                         ?>
                                     </p>
                                     <a href="<?php echo site_url($coding_entry->topic.'/view/'.$coding_entry->id); ?>"><button class="btn btn-default">Read More</button></a>
@@ -108,19 +108,19 @@
                                         <li class="favor-walden" title="favor"><i class="fa fa-heart-o"></i> <?php echo $coding_entry->favor; ?></li>
                                     </ul>
                                 </div>
-                                <div class="col-md-3 col-sm-3 text-center figure-walden">
-                                    <a class="story-img" href="<?php echo site_url($coding_entry->topic.'/view/'.$coding_entry->id); ?>">
-                                        <?php
-                                        $img_pos = strpos($coding_entry->content, '<img');
-                                        $img_close_pos = strpos($coding_entry->content, '>', $img_pos);
-                                        $img_length = $img_close_pos - $img_pos + 1;
-                                        $img_tag = mb_substr($coding_entry->content, $img_pos, $img_length);
-                                        $pos_g = strpos($img_tag, 'g');
-                                        $img_md = mb_substr($img_tag, 0, $pos_g + 1)." class='img-rounded img-circle-walden' ".mb_substr($img_tag, $pos_g + 1, $img_length - $pos_g);
-                                        echo $img_md;
-                                        ?>
-                                    </a>
-                                </div>
+<!--                                <div class="col-md-3 col-sm-3 text-center figure-walden">-->
+<!--                                    <a class="story-img" href="--><?php //echo site_url($coding_entry->topic.'/view/'.$coding_entry->id); ?><!--">-->
+<!--                                        --><?php
+//                                        $img_pos = strpos($coding_entry->content, '<img');
+//                                        $img_close_pos = strpos($coding_entry->content, '>', $img_pos);
+//                                        $img_length = $img_close_pos - $img_pos + 1;
+//                                        $img_tag = mb_substr($coding_entry->content, $img_pos, $img_length);
+//                                        $pos_g = strpos($img_tag, 'g');
+//                                        $img_md = mb_substr($img_tag, 0, $pos_g + 1)." class='img-rounded img-circle-walden' ".mb_substr($img_tag, $pos_g + 1, $img_length - $pos_g);
+//                                        echo $img_md;
+//                                        ?>
+<!--                                    </a>-->
+<!--                                </div>-->
                             </div>
 
                             <hr class="hr-walden">
