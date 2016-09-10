@@ -110,7 +110,7 @@ class Life extends CI_Controller
 //      Rules for the form
         $this->load->library('form_validation');
         $this->form_validation->set_rules('nickname', 'Nickname', 'trim|required|min_length[3]|max_length[30]');
-        $this->form_validation->set_rules('email', 'Email', 'trim|valid_email');
+        $this->form_validation->set_rules('email', 'Email', 'trim');
         $this->form_validation->set_rules('content', 'Content', 'trim|required|min_length[10]|max_length[500]');
 
 //      Actions corresponding to the rule validation

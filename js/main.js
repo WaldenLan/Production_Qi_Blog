@@ -25,12 +25,12 @@ $('.submit-link-walden').click(function () {
 
     var flag = 0;
     var tmp = 0;
-    if(!email.match(/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/) && email.length > 0) {
-        alert('Email format is illegal, please check it again!');
-        $('#email').focus();
-        flag = 1;
-        tmp = 1;
-    }
+    // if(!email.match(/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/) && email.length > 0) {
+    //     alert('Email format is illegal, please check it again!');
+    //     $('#email').focus();
+    //     flag = 1;
+    //     tmp = 1;
+    // }
     if (nickname.length < 3 && tmp == 0) {
         alert('Your nickname is too short!');
         $('#nickname').focus();
